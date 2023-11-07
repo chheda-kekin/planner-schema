@@ -12,4 +12,18 @@ Backup of structural schema as well as stored data is taken using MySQL workbenc
 ### Schema description
 
 #### Task
-Task table is used to store all the tasks created for a plan.
+Task table is used to store all the tasks created for a plan. Following are the fields created for "Task" table.
+
+* id (Auto increment integer)
+* plan_id (integer)
+* name (variable chars)
+* status (Enum ('Not Started', 'In Progress', 'Completed'))
+* priority (Enum ('Urgent', 'Important', 'Medium', 'Low'))
+* start (bigint)
+* due (bigint)
+* created (bigint)
+* updated (bigint)
+* notes (text)
+* members (json)
+* comments (json)
+* labels (json) 
